@@ -1,11 +1,3 @@
-//
-//  ViewController.m
-//  JSBridgeDemo
-//
-//  Created by Steve Gravrock on 11/22/13.
-//  Copyright (c) 2013 Steve Gravrock. All rights reserved.
-//
-
 #import "ViewController.h"
 #import <JavaScriptCore/JavaScriptCore.h>
 
