@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script>
+			jsbridge.log("head script run");
+		</script>
+	</head>
+	<body>
+		<h1>JavaScriptCore bridge demo</h1>
+		<p>Nothing interesting is displayed here. Look at the Xcode debugger console instead.</p>
+		<script>
+			jsbridge.log("body end script run");
+
+			(function () {
+				var max = 5;
+				var cb = function (value) {
+					if (value < 5) {
+						jsbridge.echo(value + 1, cb);
+					} else {
+						jsbridge.log("Got 5, done.");
+					}
+				};
+				jsbridge.echo(0, cb);
+			}());
+
+			(function () {
+				var i, inc = jsbridge.makeIncrementor();
+
+				for (i = 0; i < 5; i++) {
+					jsbridge.log("Incrementor: " + inc());
+				}
+			}());
+		</script>
+	</body>
+</html>
