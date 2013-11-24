@@ -19,8 +19,6 @@
 		AA34DFA318406B250064F2D5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA34DFA218406B250064F2D5 /* XCTest.framework */; };
 		AA34DFA418406B250064F2D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA34DF8318406B250064F2D5 /* Foundation.framework */; };
 		AA34DFA518406B250064F2D5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA34DF8718406B250064F2D5 /* UIKit.framework */; };
-		AA34DFAD18406B250064F2D5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA34DFAB18406B250064F2D5 /* InfoPlist.strings */; };
-		AA34DFAF18406B250064F2D5 /* JSBridgeDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AA34DFAE18406B250064F2D5 /* JSBridgeDemoTests.m */; };
 		AAC018261841251C001E6A22 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = AAC018251841251C001E6A22 /* index.html */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +49,6 @@
 		AA34DF9B18406B250064F2D5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		AA34DFA118406B250064F2D5 /* JSBridgeDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSBridgeDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA34DFA218406B250064F2D5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		AA34DFAA18406B250064F2D5 /* JSBridgeDemoTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JSBridgeDemoTests-Info.plist"; sourceTree = "<group>"; };
-		AA34DFAC18406B250064F2D5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		AA34DFAE18406B250064F2D5 /* JSBridgeDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JSBridgeDemoTests.m; sourceTree = "<group>"; };
 		AAC018251841251C001E6A22 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,7 +81,6 @@
 			children = (
 				AAC018251841251C001E6A22 /* index.html */,
 				AA34DF8918406B250064F2D5 /* JSBridgeDemo */,
-				AA34DFA818406B250064F2D5 /* JSBridgeDemoTests */,
 				AA34DF8218406B250064F2D5 /* Frameworks */,
 				AA34DF8118406B250064F2D5 /* Products */,
 			);
@@ -133,24 +127,6 @@
 				AA34DF8C18406B250064F2D5 /* InfoPlist.strings */,
 				AA34DF8F18406B250064F2D5 /* main.m */,
 				AA34DF9118406B250064F2D5 /* JSBridgeDemo-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		AA34DFA818406B250064F2D5 /* JSBridgeDemoTests */ = {
-			isa = PBXGroup;
-			children = (
-				AA34DFAE18406B250064F2D5 /* JSBridgeDemoTests.m */,
-				AA34DFA918406B250064F2D5 /* Supporting Files */,
-			);
-			path = JSBridgeDemoTests;
-			sourceTree = "<group>";
-		};
-		AA34DFA918406B250064F2D5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				AA34DFAA18406B250064F2D5 /* JSBridgeDemoTests-Info.plist */,
-				AA34DFAB18406B250064F2D5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -242,7 +218,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA34DFAD18406B250064F2D5 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +238,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA34DFAF18406B250064F2D5 /* JSBridgeDemoTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,14 +266,6 @@
 				AA34DF9618406B250064F2D5 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		AA34DFAB18406B250064F2D5 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AA34DFAC18406B250064F2D5 /* en */,
-			);
-			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

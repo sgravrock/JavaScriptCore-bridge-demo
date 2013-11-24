@@ -14,7 +14,7 @@
 	// Get a pointer to the JSContext that we will use to create objects and wire
 	// everything up.
 	UIWebView *webView = (UIWebView *)self.view;
-    JSContext *ctx = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
+	JSContext *ctx = [webView valueForKeyPath:@"documentView.webView.mainFrame.javaScriptContext"];
 	
 	// We can create an object to serve as our "namespace", and add things to it.
 	// Because the page hasn't loaded yet, these things will be immediately available
